@@ -12,7 +12,7 @@ spring:
 
 eureka:
   instance:
-    hostname: eureka6001.com
+    hostname: localhost
   client:
     registerWithEureka: false
     fetchRegistry: false
@@ -31,11 +31,13 @@ spring:
 
 eureka:
   instance:
-    hostname: eureka6001.com
+    hostname: localhost
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://localhost:6001/eureka/
+  service:
+    enable-self-preservation: true
 
 
